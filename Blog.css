@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Passions+Conflict&family=Playball&family=Tangerine:wght@400;700&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+
+  
+}
+body{
+  background-color: #0a0a0a;
+ 
+}
+
+
+
+ 
+ .head h2{
+  background-color: #050505;
+  color: #fefcfc;
+  padding-left: 600px;
+  font-family: "Playball";
+  height: 30px;
+
+ }
+
+/*-----------header---------*/
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  background: #efeaef;
+  overflow-x: hidden;   
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.navbar a {
+  margin: 10px;
+  display: block;
+  color: rgb(78, 79, 79);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .3s;
+  padding:  8px 26px;
+
+}
+
+.navbar .closebtn {
+  position: absolute;
+  top: 13px;
+  right: 32px;
+  font-size: 38px;
+  margin-left: 50px;
+  color: rgb(80, 80, 82);
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #4d4b4b;
+}
+
+.menu_items {
+  margin-top: 20px;
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 1000;
+  right: 14%;
+  top: 30px;
+  color: #fefcfc;
+  cursor: pointer;
+  display: inherit;
+}
+.fa{
+  color: whitesmoke;
+  margin-left: 520px;
+  margin-bottom:0px;
+  font-size: 70px;
+  
+}
+/*-----------header---------*/
+
+
+
+
+
+
+
+/*-----------blog---------*/
+h5{
+  background-image: url(img/istockphoto-1143390251-1024x1024.jpg);
+  
+}
+
+h5{
+  color: rgb(6, 2, 2);
+  font-size: 140px;
+  margin-top: 0px;
+  font-family:'playball' ;
+  font-weight: 100%;
+
+} 
+
+.blog .text h2 {
+  letter-spacing: 0;
+  font-weight: 1000;
+  margin-top: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+.blog {
+  text-align: center;
+  display: inline;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  
+  
+  
+  }
+
+
+.blog .grid {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  text-align:center;
+}
+
+.blog .img {
+  width: 80%;
+  height: 280px;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  margin-left: 160px;
+}
+
+.blog img {
+  width: 40%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.blog img:hover {
+  transform: scale(1.2);
+}
+
+.blog span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2d620a;
+  color: rgb(245, 242, 245);
+  margin: 20px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.blog .text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.blog .text i {
+  color: #fbd56d;
+  margin-right: 10px;
+}
+
+.blog .text label {
+  font-weight: bold;
+  color: rgb(251, 251, 251);
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+
+
+.blog .text:hover {
+  color: #7952f8;
+}
+
+
+/*-----------blog---------*/
+
+
+/*-----------Review---------*/
+.heading{
+  color: #f3b60d;
+  background-color: #e20909;
+  padding-top: 10px;
+  align-content:center ;
+  
+
+}
+h1{
+  padding-left: 380px;
+  background-image: url(img/istockphoto-157528129-1024x1024.jpg);
+  color: #1a1fb6;
+  font-family: 'Caramel';
+  font-size: 130px;
+}
+.review .review-slider{
+  padding:7rem 0;
+  background-image: url(img/istockphoto-629111916-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review .review-slider .box{
+  border:rgb(7, 7, 7);
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  padding:1rem;
+  margin-top: 5px;
+}
+
+.review .review-slider .box .fa-quote-left{
+  position: absolute;
+  top:2rem; left: 2.5rem;
+  font-size: 6rem;
+  color:rgb(3, 3, 3);
+  z-index: -1;
+}
+
+.review .review-slider .box .fa-quote-right{
+  position: absolute;
+  bottom:2rem; right: 2.5rem;
+  font-size: 6rem;
+  color:rgb(8, 8, 8);
+  z-index: -1;
+}
+
+.review .review-slider .box:hover .fa-quote-left{
+  top:-6.5rem;
+}
+
+.review .review-slider .box:hover .fa-quote-right{
+  bottom:-6.5rem;
+}
+
+.review .review-slider .box img{
+  height:7rem;
+  width:7rem;
+  border-radius: 50%;
+  margin-bottom: .7rem;
+}
+
+.review .review-slider .box .stars{
+  padding:.5rem 0;
+}
+
+.review .review-slider .box .stars i{
+  font-size: 1.7rem;
+  color:gold;
+}
+
+.review .review-slider .box p{
+  font-size: 1.6rem;
+  color:rgb(12, 12, 12);
+  padding:1rem 0;
+  line-height: 1.8;
+  font-family:'Passions';
+}
+
+.review .review-slider .box h3{
+  font-size: 2.2rem;
+  color:rgb(5, 5, 5);
+  line-height: 1.8;
+  font-family:'Passions';
+}
+
+.review .review-slider .box span{
+  font-size: 1.5rem;
+  color:#040404;
+  font-family:'Passions';
+}
+
+.swiper-pagination-bullet{
+  height:1.5rem;
+  width:1.5rem;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet-active{
+  background:var(--main-color);
+}
+/*--- review ends---*/
+/*-----------footer---------*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #3f3f40;
+    padding: 70px 0;
+  
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+.fa-regular {
+  color: whitesmoke;
+}
+.col{
+  color: whitesmoke;
+
+}
+form{
+  padding-bottom: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fefcfc;
+  margin-bottom: 50px;
+}
+form .fa{
+  font-size: 18px;
+  margin-right: 10px;
+  color: #fefcfc;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  color: #fefcfc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+form button .fas{
+  font-size: 16px;
+  color: #fefcfc;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+/*----------------footer---------*/
+

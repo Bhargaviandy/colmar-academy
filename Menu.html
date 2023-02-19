@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cafe & Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- links for font-awesome and bootstrap4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Menu.css">
+  <!---ionicons link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body>
+    <section class="head">
+        <div class="logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        
+    </section>
+    <!--navbar-->
+  <header>
+    <nav>
+      <div id="mynavbar" class="navbar">
+        <span class="closebtn " onclick="closeNav()">&times;</span>
+        <div class="menu_items">
+          <a href="coffee.html"> Home </a>
+          <a href="about us.html"> About Us </a>
+          <a href='product.html.html'> Products </a>
+          <a href='Menu.html'> Menu</a>
+          <a href='Blog.html'> Blog </a>
+          <a href='pay.html'>payment </a>
+        </div>
+      </div>
+      <div class="social_media">
+        <i class="fas fa-bars hamburger-icon " onclick="openNav()"></i>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    function openNav() {
+      document.getElementById("mynavbar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mynavbar").style.width = "0";
+    }
+  </script>
+  <!-- product -->
+<section class="product" id="product">
+<h2 class="title">The best products we have:-</h2>
+      <div class="product-filter">
+         <button class="btn-filter" data-filter="*">All</button>
+         <button class="btn-filter" data-filter=".coffee">Coffee</button>
+         <button class="btn-filter" data-filter=".non-coffee">Tea</button>
+         <button class="btn-filter" data-filter=".cakes">Cakes</button>
+      </div>
+    <div class="product-list" data-ref="product-list">
+        <div class="product-card coffee" data-order="1">
+           <div class="product-image">
+                 <img src="img/hot chocolate.jpg" alt="">
+            </div>
+            <div class="product-detail">
+                       <h4>Hot Chocolate</h4>
+                       <small>have a Delicious hot chocolate</small>
+                       <div class="product-price">
+                        <p>$13.5</p>
+                        
+                          <ion-icon class="heart-online" name="heart"></ion-icons>
+                    </div>
+                </div>
+           </div>
+        <div class="product-card coffee" data-order="2">
+            <div class="product-image">
+                  <img src="img/cappuccino.jpg" alt="">
+             </div>
+             <div class="product-detail">
+                        <h4>Cappuccino</h4>
+                        <small>have cappuccino to start a new day</small>
+                        <div class="product-price">
+                           <p>$20.5</p>
+                           <ion-icon class="heart-online" name="heart"></ion-icons>
+                     </div>
+                 </div>
+            </div>
+            <div class="product-card coffee" data-order="3">
+              <div class="product-image">
+                    <img src="img/vnilla cold coffee.jpg" alt="">
+               </div>
+               <div class="product-detail">
+                          <h4>Vnilla Cold Coffee</h4>
+                          <small>have a day with Bitter-Sweet </small>
+                          <div class="product-price">
+                             <p>$20.5</p>
+                             <ion-icon class="heart-online" name="heart"></ion-icons>
+                       </div>
+                   </div>
+              </div>
+              <div class="product-card coffee" data-order="4">
+                <div class="product-image">
+                      <img src="img/Americano.jpg" alt="">
+                 </div>
+                 <div class="product-detail">
+                            <h4>Americano</h4>
+                            <small>start a day with fresh mind</small>
+                            <div class="product-price">
+                               <p>$25.5</p>
+                               <ion-icon class="heart-online" name="heart"></ion-icons>
+                         </div>
+                     </div>
+                </div>
+                <div class="product-card coffee" data-order="5">
+                  <div class="product-image">
+                        <img src="img/latte.jpg" alt="">
+                   </div>
+                   <div class="product-detail">
+                              <h4>Latte</h4>
+                              <small>have  a latte with your loved onces</small>
+                              <div class="product-price">
+                                 <p>$20.5</p>
+                                 <ion-icon class="heart-online" name="heart"></ion-icons>
+                           </div>
+                       </div>
+                  </div>
+                  <div class="product-card coffee" data-order="6">
+                    <div class="product-image">
+                          <img src="img/Espresso.jpg" alt="">
+                     </div>
+                     <div class="product-detail">
+                                <h4>Espresso</h4>
+                                <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                <div class="product-price">
+                                   <p>$.15</p>
+                                   <ion-icon class="heart-online" name="heart"></ion-icons>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="product-card coffee" data-order="7">
+                      <div class="product-image">
+                            <img src="img/cold coffee.jpg" alt="">
+                       </div>
+                       <div class="product-detail">
+                                  <h4>Cold Coffee</h4>
+                                  <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                  <div class="product-price">
+                                     <p>$22.5</p>
+                                     <ion-icon class="heart-online" name="heart"></ion-icons>
+                               </div>
+                           </div>
+                      </div>
+                      <div class="product-card Tea" data-order="8">
+                        <div class="product-image">
+                              <img src="img/green-tea.jpg" alt="">
+                         </div>
+                         <div class="product-detail">
+                                    <h4>Green-tea</h4>
+                                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                    <div class="product-price">
+                                       <p>$20.5</p>
+                                       <ion-icon class="heart-online" name="heart"></ion-icons>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="product-card Tea" data-order="9">
+                          <div class="product-image">
+                                <img src="img/chamomile-tea.jpg" alt="">
+                           </div>
+                           <div class="product-detail">
+                                      <h4>Chamomile-tea</h4>
+                                      <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                      <div class="product-price">
+                                         <p>$24.5</p>
+                                         <ion-icon class="heart-online" name="heart"></ion-icons>
+                                   </div>
+                               </div>
+                          </div>
+                          <div class="product-card Tea" data-order="10">
+                            <div class="product-image">
+                                  <img src="img/barley-tea.jpg" alt="">
+                             </div>
+                             <div class="product-detail">
+                                        <h4>Barley-tea</h4>
+                                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                        <div class="product-price">
+                                           <p>$25.5</p>
+                                           <ion-icon class="heart-online" name="heart"></ion-icons>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="product-card Tea" data-order="11">
+                              <div class="product-image">
+                                    <img src="img/black-tea.jpg" alt="">
+                               </div>
+                               <div class="product-detail">
+                                          <h4>Black-tea</h4>
+                                          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                          <div class="product-price">
+                                             <p>$22.5</p>
+                                             <ion-icon class="heart-online" name="heart"></ion-icons>
+                                       </div>
+                                   </div>
+                              </div>
+                              <div class="product-card Tea" data-order="12">
+                                <div class="product-image">
+                                      <img src="img/dandelion-tea.jpg" alt="">
+                                 </div>
+                                 <div class="product-detail">
+                                            <h4>Dandelion-tea</h4>
+                                            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                            <div class="product-price">
+                                               <p>$22.5</p>
+                                               <ion-icon class="heart-online" name="heart"></ion-icons>
+                                         </div>
+                                     </div>
+                                </div>
+                                <div class="product-card Tea" data-order="13">
+                                  <div class="product-image">
+                                        <img src="img/rosemary-tea-in-clear-glass-cup.jpg" alt="">
+                                   </div>
+                                   <div class="product-detail">
+                                              <h4>Rosemary-tea</h4>
+                                              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                              <div class="product-price">
+                                                 <p>$22.5</p>
+                                                 <ion-icon class="heart-online" name="heart"></ion-icons>
+                                           </div>
+                                       </div>
+                                  </div>
+                                  <div class="product-card Cakes" data-order="14">
+                                    <div class="product-image">
+                                          <img src="img/Strawberry-Chocolate-Mousse-Cake-dd12418d5b5b45869a3e622ce2f5bd47.webp" alt="">
+                                     </div>
+                                     <div class="product-detail">
+                                                <h4>Strawberry-Chocolate-Mousse-Cake</h4>
+                                                <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                <div class="product-price">
+                                                   <p>$32.5</p>
+                                                   <ion-icon class="heart-online" name="heart"></ion-icons>
+                                             </div>
+                                         </div>
+                                    </div>
+                                    <div class="product-card Cakes" data-order="15">
+                                      <div class="product-image">
+                                            <img src="img/Walnut-Cream-Roll-2000-4f1d3a7f2c3348a8ab7fcf96f50e344a.webp" alt="">
+                                       </div>
+                                       <div class="product-detail">
+                                                  <h4>Walnut-Cream-Roll</h4>
+                                                  <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                  <div class="product-price">
+                                                     <p>$40.5</p>
+                                                     <ion-icon class="heart-online" name="heart"></ion-icons>
+                                               </div>
+                                           </div>
+                                      </div>
+                                      <div class="product-card Cakes" data-order="16">
+                                        <div class="product-image">
+                                              <img src="img/peach.jpg" alt="">
+                                         </div>
+                                         <div class="product-detail">
+                                                    <h4>Peach-Cake</h4>
+                                                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                    <div class="product-price">
+                                                       <p>$35.5</p>
+                                                       <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                        <div class="product-card Cakes" data-order="17">
+                                          <div class="product-image">
+                                                <img src="img/moist-red-velvet-cupcakes-photo-by-footballgrl16-586441-62c6d793cf0a41b99a2e78e7f8b205f7.webp" alt="">
+                                           </div>
+                                           <div class="product-detail">
+                                                      <h4>moist-red-velvet-cupcakes</h4>
+                                                      <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                      <div class="product-price">
+                                                         <p>$32.5</p>
+                                                         <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                   </div>
+                                               </div>
+                                          </div>
+                                          <div class="product-card Cakes" data-order="18">
+                                            <div class="product-image">
+                                                  <img src="img/lemon-buttermilk-pound-cake-with-aunt-evelyns-lemon-glaze-photo-by-naples34102-2054794-c50ca724b5ba4b31811e6b514eba76ea.webp" alt="">
+                                             </div>
+                                             <div class="product-detail">
+                                                        <h4>lemon-buttermilk-pound-cake</h4>
+                                                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                        <div class="product-price">
+                                                           <p>$30.5</p>
+                                                           <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                     </div>
+                                                 </div>
+                                            </div>
+                                            <div class="product-card Cakes" data-order="19">
+                                              <div class="product-image">
+                                                    <img src="img/Dark-Chocolate-Cake-I-bae8ea26961c4369947e9665b287768d.webp" alt="">
+                                               </div>
+                                               <div class="product-detail">
+                                                          <h4>Dark-Chocolate-Mousse-Cake</h4>
+                                                          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                          <div class="product-price">
+                                                             <p>$40.5</p>
+                                                             <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                       </div>
+                                                   </div>
+                                              </div>
+                                              <div class="product-card Cakes" data-order="20">
+                                                <div class="product-image">
+                                                      <img src="img/Angel-Food-Cake-e55028fe02f245a2aefbcbf9dd70f337.webp" alt="">
+                                                 </div>
+                                                 <div class="product-detail">
+                                                            <h4>Angel-Food-Cake</h4>
+                                                            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                            <div class="product-price">
+                                                               <p>$30.5</p>
+                                                               <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                         </div>
+                                                     </div>
+                                                </div>
+                                                <div class="product-card Cakes" data-order="21">
+                                                  <div class="product-image">
+                                                        <img src="img/Isaac-Carrot-Cake-65495ed4550f42c1bc80431aefb2bad7.webp" alt="">
+                                                   </div>
+                                                   <div class="product-detail">
+                                                              <h4>Carrot-Cake</h4>
+                                                              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                                                              <div class="product-price">
+                                                                 <p>$40.5</p>
+                                                                 <ion-icon class="heart-online" name="heart"></ion-icons>
+                                                           </div>
+                                                       </div>
+                                                  </div>
+                                            </div> 
+</section>
+       <footer class="footer">
+       
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Cafe & Coffee</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">Tea</a></li>
+                <li><a href="#">Cakes</a></li>
+            </ul>
+            </div>
+            <div class="col">
+               <h3>Newsletter</h3>
+        <form>
+          <button ><i class="fa-regular fa-envelope-circle-check"></i></i></button>
+          <input type="email" placeholder="Enter your email id" required> 
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+
+</body>
+<script src="menu.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min. -min.js"></script>
+             <!---mixitup js-->                                       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<!--- menu .js link-->
+
+
+</script>
+</html>
